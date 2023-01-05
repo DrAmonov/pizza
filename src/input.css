@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   width: 100%;
+   color: white;
+   min-height: 100vh;
+   background: url('../images/bg-pizza.jpg') no-repeat center center;
+}
+
+input {
+   outline: none;
+   color: black !important;
+   border: 1px solid rgb(169, 169, 169);
+}
+
+select {
+   outline: none;
+   color: black;
+   border: 1px solid rgb(169, 169, 169);
+}
+
+.main {
+   width: 100%;
+   opacity: 0.7;
+   min-height: 100vh;
+   background-color: black;
+}
+
+.title {
+   font-size: 20px;
+   font-weight: 600;
+   margin: 20px 0 10px 0;
+}
+
+.main__inner {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   gap: 100px;
+   justify-content: space-around;
+   margin: 0 auto;
+   max-width: 1366px;
+   /* background-color: red; */
+}
+
+.inner_left {
+   width: 100%;
+   max-width: 450px;
+   /* background-color: blue; */
+}
+
+.left_inputs {
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+   /* background-color: aqua; */
+}
+
+.pizza_weight > select {
+   width: 100%;
+}
+
+.pizza_size > div > div {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   color: black;
+   align-items: center;
+   justify-content: center;
+   background: #fff;
+   border-radius: 50%;
+   position: relative;
+   cursor: pointer;
+}
+
+.pizza_size > div > div.active {
+   color: white;
+   background: #0f0;
+}
+
+.pizza_size > div > div > input {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.pizza_size__text {
+   /* z-index: initial; */
+   color: black;
+}
+
+.inner_right {
+   width: 100%;
+   max-width: 450px;
+   gap: 15px;
+   display: flex;
+   flex-direction: column;
+   /* background-color: chartreuse; */
+}
+
+.input_checkbox_box {
+   gap: 10px;
+   display: flex;
+   align-items: center;
+}
+
+.input_checkbox {
+   width: 18px;
+   height: 18px;
+}
+
+.input_checkbox_addition {
+   width: 18px;
+   height: 18px;
+}
+
+.checkbox_text {
+   line-height: 20px;
+   cursor: pointer;
+}
+
+.right_items {
+   gap: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.right_item__title{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.gap-15 {
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
