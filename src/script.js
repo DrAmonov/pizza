@@ -8,6 +8,7 @@ let InputWeight = document.getElementById('inputWeight')
 let InputAddress = document.getElementById('inputAddress')
 let InputIngredients = document.querySelectorAll('.input_checkbox')
 let InputAddition = document.querySelectorAll('.input_checkbox_addition')
+let totalresult = document.querySelector('.js-result')
 
 
 let ResultName = document.getElementById('name')
@@ -84,4 +85,7 @@ AddButton.addEventListener('click', (e) => {
          item.checked = false
       }
    })
+
+  totalresult.textContent = Math.floor((Math.random()* 10) + 5)*5;
+   
 })
